@@ -14,6 +14,11 @@ class InvoiceForm(ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        # Manually setting labels for explicitly defined fields
+        self.fields['sequence'].label = 'Дараалал'
+        self.fields['number'].label = 'Дугаар'
+        self.fields['issued_date'].label = 'Огноо'
+        self.fields['customer'].label = 'Харилцагч'
         self.helper = FormHelper()
         self.helper.form_tag = False
         self.helper.layout = Layout(
@@ -40,6 +45,9 @@ class OrderLineForm(ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.fields['product'].label = 'Бүтээгдэхүүн'
+        self.fields['quantity'].label = 'Т/Ш'
+        self.fields['unit_price'].label = 'Нэгж үнэ'
         self.helper = FormHelper()
         self.helper.form_tag = False
         self.helper.layout = Layout(

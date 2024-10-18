@@ -130,7 +130,7 @@ class Invoice(models.Model):
     issuer = models.ForeignKey(
         Issuer, null=True, blank=True, on_delete=models.CASCADE)
     customer = models.ForeignKey(
-        Customer, null=True, blank=True, on_delete=models.CASCADE)
+        Customer, null=True, blank=True, on_delete=models.CASCADE, verbose_name='Харилцагч')
     global_settings = models.ForeignKey(
         GlobalSettings, null=True, blank=True, on_delete=models.CASCADE)
     mail_info = models.OneToOneField(

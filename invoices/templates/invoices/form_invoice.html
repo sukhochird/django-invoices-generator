@@ -4,18 +4,18 @@
 {% block main %}
 <div class="container">
   <h3 class="mt-4">
-  Details
+  Нэхэмжлэхийн мэдээлэл
 </h3>
   <form class="my-class" method="post">
     {% crispy invoice_form %}
     <h4 class="mt-4">
-    Order
+    Бүтээгдэхүүнүүд
   </h4>
     {{ order_formset.management_form }}
   {% for order in order_formset %}
       {% crispy order %}
   {% endfor %}
-    <button type="submit" class="mt-4 btn btn-primary"  value="Submit">Submit</button>
+    <button type="submit" class="mt-4 btn btn-primary"  value="Submit">Хадгалах</button>
   </form>
 </div>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>

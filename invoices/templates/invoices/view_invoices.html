@@ -17,16 +17,16 @@
             </svg>
         </th>
         <th scope="col" class="p-4 align-middle">
-            Number
+            Нэхэмжлэх
         </th>
         <th scope="col" class="p-4 align-middle">
-            Date
+            Огноо
         </th>
         <th scope="col" class="p-4 align-middle">
-            Mail
+            Мэйл
         </th>
         <th scope="col" class="p-4 align-middle">
-            Client
+            Харилцагч
         </th>
         <th scope="col" class="p-4 align-middle">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
@@ -35,7 +35,7 @@
             </svg>
         </th>
         <th scope="col" class="p-4 align-middle">
-            <button type="submit" class="btn btn-primary" value="Submit">Send</button>
+            <button type="submit" class="btn btn-primary" value="Submit">Мэйл илгээх</button>
         </th>
     </tr>
 </thead>
@@ -56,11 +56,11 @@
         </td>
         <td class="p-4 align-middle">
             {% if invoice.mail_info.status == 'Delivered' %}
-            <span class="badge rounded-pill bg-success">Sent</span>
+            <span class="badge rounded-pill bg-success">Илгээсэн</span>
             {% elif invoice.mail_info.status == 'Pending' %}
-            <span class="badge rounded-pill bg-warning">Pending</span>
+            <span class="badge rounded-pill bg-warning">Хүлээгдэж байгаа</span>
             {% elif invoice.mail_info.status == 'Failed' %}
-            <span class="badge rounded-pill bg-danger">Failed</span>
+            <span class="badge rounded-pill bg-danger">Алдаа гарсан</span>
             {% endif %}
         </td>
         <td class="p-4 align-middle">
