@@ -5,9 +5,9 @@ django-bootstrap-v5==1.0.11
 django-browser-reload==1.11.0
 django-crispy-forms==2.0
 django-environ==0.10.0
-django-weasyprint==2.2.0
+django-weasyprint==2.3.0
 gunicorn==21.2.0
 psycopg2-binary==2.9.7
-weasyprint==58.0
+weasyprint==62.1
 whitenoise==6.5.0
 zopfli==0.2.3

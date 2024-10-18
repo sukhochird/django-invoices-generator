@@ -137,3 +137,6 @@ GitHub.sublime-settings
 
 # If you are using a Macbook
 .DS_Store
+
+
+.idea/
